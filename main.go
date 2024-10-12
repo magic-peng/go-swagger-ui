@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-//go:embed third_party/swagger-ui/*
+//go:embed third_party/swagger-ui/dist/*
 var swaggerUI embed.FS
 
 var (
@@ -39,7 +39,7 @@ var rootCmd = &cobra.Command{
 		}
 
 		// 提取子文件系统
-		swaggerUIFS, err := fs.Sub(swaggerUI, "third_party/swagger-ui")
+		swaggerUIFS, err := fs.Sub(swaggerUI, "third_party/swagger-ui/dist")
 		if err != nil {
 			log.Fatalf("无法提取 swagger-ui 子文件系统: %v", err)
 		}
