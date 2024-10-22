@@ -1,33 +1,37 @@
-# Swagger UI 项目
+# Swagger UI Project
 
-这是一个使用 Golang 启动 Swagger UI 的简单项目。
+This is a simple project that uses Golang to start Swagger UI.
 
-## 使用的开源项目
+## Multilingual Versions
 
-本项目使用了以下开源项目：
+- 🇨🇳 [简体中文](./README-cn.md)
 
-- [Swagger UI](https://github.com/swagger-api/swagger-ui): 一个强大的工具，用于生成和展示 API 文档。Swagger UI 使得用户可以方便地与 API 进行交互，查看可用的端点及其请求和响应示例。
+## Open Source Projects Used
 
-感谢 Swagger UI 团队的出色工作和贡献！
+This project uses the following open source projects:
 
-## 使用步骤
+- [Swagger UI](https://github.com/swagger-api/swagger-ui): A powerful tool for generating and displaying API documentation. Swagger UI makes it easy for users to interact with APIs, view available endpoints, and see request and response examples.
 
-1. **安装**：
+Thanks to the Swagger UI team for their excellent work and contributions!
+
+## Usage Steps
+
+1. **Install**:
 
     ```bash
     go install github.com/magic-peng/go-swagger-ui
     ```
 
-2. **启动服务**：
+2. **Start the Server**:
 
     ```bash
     go-swagger-ui --swagger=./swagger.json --port=8080
     ```
 
-3. **访问 Swagger UI**：
+3. **Access Swagger UI**:
 
-   在浏览器中打开 [http://localhost:8080](http://localhost:8080)，查看 API 文档。
+   Open [http://localhost:8080](http://localhost:8080) in your browser to view the API documentation.
 
-## 许可证
+## License
 
-本项目采用 MIT 许可证。
+This project is licensed under the MIT License.
